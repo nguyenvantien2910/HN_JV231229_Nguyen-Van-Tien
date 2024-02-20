@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Font Awesome  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- My CSS -->
+	<link rel="stylesheet" href="../admin/style.css">
+
+	<title>Admin-TienNV</title>
+</head>
+
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<span class="text">Portfolio Admin</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<span class="text">TechStack Management</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<span class="text">Project Management</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="#" class="logout">
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Project Management</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Project Management</a>
+						</li>
+						<li>></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="table-data">
+				<div class="project">
+					<div class="head">
+						<h3>MyProjects</h3>
+					</div>
+					<form id="input-form">
+						<input type="text" id="project_name" placeholder="Project Name">
+						<input type="text" id="image_url" placeholder="Image URL">
+						<input type="text" id="project_link" placeholder="Link">
+						<input type="text" id="project_tag" placeholder="Tags(Ex: React, Angular)">
+
+						<button id="add-button" type="submit">+ New Project</button>
+					</form><br>
+
+					<table>
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Project Name</th>
+								<th>Image URL</th>
+								<th>Link</th>
+								<th>Tags</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody id="table-body"></tbody>
+					</table>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+
+	<script src="../admin/script.js"></script>
+</body>
+
+</html>
